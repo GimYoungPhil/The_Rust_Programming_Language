@@ -32,12 +32,12 @@ enum Coin {
 
 fn main() {
     let mut count = 0;
-    let coin = Coin::Quarter(UsState::Massachusetts);
+    let coin = Coin::Quarter(UsState::NewYork);
 
-    match coin {
-        Coin::Quarter(ref state) => println!("State quarter from {:?}!", state),
-        _ => count += 1,
-    }
+    // match coin {
+    //     Coin::Quarter(state) => println!("State quarter from {:?}!", state),
+    //     _ => count += 1,
+    // }
 
     if let Coin::Quarter(state) = coin {
         println!("State quarter from {:?}!", state);
