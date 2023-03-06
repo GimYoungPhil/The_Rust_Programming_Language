@@ -1,5 +1,7 @@
 fn main() {
+    // Vec<i32>
     let mut v = Vec::new();
+    println!("{}", v.len());
 
     v.push(5);
     v.push(6);
