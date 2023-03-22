@@ -1,11 +1,11 @@
 fn main() {
-    let age_old_tom: u32 = 37;
+    let x: i8 = 10;
 
-    let age_young_tom = time_machine(age_old_tom);
+    let mut y: i8 = 20;
 
-    println!("Tom's Age: {}", age_young_tom);
-}
+    println!("x: {}, y: {}", x, y);
 
-fn time_machine(age_someone: u32) -> u32 {
-    age_someone.saturating_sub(10)
+    y = 90;
+
+    println!("x: {}, y: {}", x, y);
 }

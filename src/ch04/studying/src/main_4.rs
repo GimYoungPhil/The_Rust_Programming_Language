@@ -1,12 +1,11 @@
 fn main() {
     let s1: String = String::from("Crustacea");
 
-    greeting(s1);
+    greeting(&s1);
 
-    // error
-    // println!("{}", s1);
+    println!("{}", s1);
 }
 
-fn greeting(someone: String) {
+fn greeting(someone: &String) {
     println!("Hello {}!", someone);
 }

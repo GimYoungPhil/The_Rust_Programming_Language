@@ -1,9 +1,10 @@
 fn main() {
-    let s = "RUST";
+    let s1: String = String::from("Crustacea");
 
-    greeting(s);
-}
+    let s2: String = s1;
 
-fn greeting(something: String) {
-    println!("hello, {}", something)
+    // error
+    println!("{}", s1);
+
+    println!("{}", s2);
 }
