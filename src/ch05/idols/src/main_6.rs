@@ -12,23 +12,23 @@ impl Idol {
     fn can_over(&self, other: &Idol) -> bool {
         self.weight > other.weight && self.height > other.height 
     }
-
-    fn from(weight: f32, height: f32) -> Idol {
-        Idol {
-            weight,
-            height,
-        }
-    }
 }
 
 fn main() {
-    let sakura = Idol {
+    let sakura: Idol = Idol {
         weight: 42.0,
         height: 1.63,
     };
 
-    let kazuha = Idol::from(47.0, 1.70);
-    let sol = Idol::from(41.0, 1.59);
+    let kazuha: Idol = Idol {
+        weight: 47.0,
+        height: 1.70,
+    };
+
+    let sol: Idol = Idol {
+        weight: 41.0,
+        height: 1.59,
+    };
 
     println!("Sakura is over kazuha: {}", sakura.can_over(&kazuha));
     println!("Sakura is over sol: {}", sakura.can_over(&sol));

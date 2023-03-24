@@ -1,11 +1,9 @@
 fn main() {
-    let mut number: i32 = 9999;
+    let mut number: Option<u16> = None;
 
-    let another_number = &mut number;
+    println!("number: {:?}", number);
 
-    // number = 888;
-    // *another_number = 777;
+    number = Some(999);
 
-    println!("number: {}", number);
-    println!("another: {}", another_number);
+    println!("number: {:?}", number);
 }
