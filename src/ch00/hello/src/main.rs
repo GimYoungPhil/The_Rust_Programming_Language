@@ -26,8 +26,8 @@ fn main() -> () {
     println!("{: <8}| {: >6} | {:#p}", "isize", size_of::<isize>(), &x5);
     println!();
 
-    println!("{:_^37}", "unsigned");
-    println!("{:_^8}|_{:_^6}_|_{:_^18}", "Type", "Size", "Address");
+    println!("{:_^37}", "Unsigned");
+    println!("{:_^8}|_{:_^6}_|_{:_^18}", "type", "size", "address");
     println!("{: <8}| {: >6} | {:#p}", "u8",    size_of::<u8>(),    &y0);
     println!("{: <8}| {: >6} | {:#p}", "u16",   size_of::<u16>(),   &y1);
     println!("{: <8}| {: >6} | {:#p}", "u32",   size_of::<u32>(),   &y2);
