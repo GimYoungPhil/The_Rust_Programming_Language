@@ -3,11 +3,12 @@ use std::mem::{size_of, size_of_val};
 fn main() -> () {
 
     let s: String = String::from("Rust");
-
     println!("{: <8}| {: >6} | {: >6} | {:#p}", "String", size_of::<String>(), size_of_val(&s), &s);
 
-    let len: usize = calculate_length(&s);
+    // let rs: &String = &s;
+    // println!("|{:^15p}|{:^15X}|{:^15X}|", rs.as_ptr(), rs.len(), rs.capacity());
 
+    let len: usize = calculate_length(&s);
     println!("{}", len);
     // let rs: &String = &s;
     // let ss: &str = &s[..];
