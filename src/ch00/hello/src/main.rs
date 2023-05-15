@@ -1,10 +1,14 @@
-fn main() -> () {
+struct S<'a> {
+    r: &'a i32,
+}
 
-    let tup: (u32, f32, u32) = (1, 0.5, 3);
-    let rt: &(u32, f32, u32) = &tup;
+fn main() {
 
-    println!("{:?}", tup);
-    println!("{:?}", rt);
-    println!("end...");
+    let s;
+    {
+        let x = 10;
+        s = S { r: &x};
+    }
+    println!("{}", s.r);
 
 }
