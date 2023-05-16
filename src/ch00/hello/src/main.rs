@@ -1,40 +1,22 @@
-#[derive(Debug)]
-struct Rectangle {
-    width: u32,
-    height: u32,
-}
-
-impl Rectangle {
-    fn area(&self) -> u32 {
-        self.width * self.height
-    }
-
-    fn add_width(&mut self, value: u32) {
-        self.width += value;
-    }
-
-    fn can_hold(&self, o: &Self) -> bool {
-        self.width > o.width && self.height > o.height
-    }
-
-    fn square(size: u32) -> Self {
-        Self { width: size, height: size }
-    }
-}
-
 fn main() {
+    let some_u8_value = Some(3u8);
 
-    let mut rect = Rectangle {
-        width: 30,
-        height: 50,
-    };
-    println!("Rectangle: {}", rect.area());
+    match some_u8_value {
+        Some(v) => println!("Some {}", v),
+        _ => (),
+    }
 
-    rect.add_width(10);
-    println!("Rectangle: {}", rect.area());
+    if let Some(v) = some_u8_value {
+        println!("Some {}", v);
+    } else {
+        println!("None...");
+    }
 
-    let rect1 = Rectangle::square(46);
+    if let Some(3) = some_u8_value {
+        println!("Three");
+    }
 
-    let is_hold = rect.can_hold(&rect1);
-    println!("Rectangle can hold: {}", is_hold);
+
 }
+
+
