@@ -16,10 +16,6 @@ impl Rectangle {
     fn can_hold(&self, o: &Self) -> bool {
         self.width > o.width && self.height > o.height
     }
-
-    fn square(size: u32) -> Self {
-        Self { width: size, height: size }
-    }
 }
 
 fn main() {
@@ -33,7 +29,10 @@ fn main() {
     rect.add_width(10);
     println!("Rectangle: {}", rect.area());
 
-    let rect1 = Rectangle::square(46);
+    let rect1 = Rectangle {
+        width: 35,
+        height: 35,
+    };
 
     let is_hold = rect.can_hold(&rect1);
     println!("Rectangle can hold: {}", is_hold);
