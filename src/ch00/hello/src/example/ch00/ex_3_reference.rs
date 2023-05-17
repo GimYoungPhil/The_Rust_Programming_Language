@@ -1,6 +1,6 @@
 use std::mem::{size_of, size_of_val};
 
-fn main() -> () {
+pub fn run() -> () {
 
     let x0: i8 = 0;
     let x1: i16 = 0;
@@ -16,12 +16,12 @@ fn main() -> () {
     let y4: u128 = 0;
     let y5: usize = 0;
 
-    let r0: &u8 = &x0;
-    let r1: &u16 = &x1;
-    let r2: &u32 = &x2;
-    let r3: &u64 = &x3;
-    let r4: &u128 = &x4;
-    let r5: &usize = &x5;
+    let r0: &i8 = &x0;
+    let r1: &i16 = &x1;
+    let r2: &i32 = &x2;
+    let r3: &i64 = &x3;
+    let r4: &i128 = &x4;
+    let r5: &isize = &x5;
 
     println!("{:_^22}", "signed");
     println!("{:<12} | {:>3} | {:>3}", "i8",    size_of::<i8>(),    size_of_val(&x0));

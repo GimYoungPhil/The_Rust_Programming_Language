@@ -1,6 +1,6 @@
 use std::mem::{size_of, size_of_val};
 
-fn main() -> () {
+pub fn run() -> () {
 
     let v0: Vec<i8>    = vec![1, 2, 3, 4, 5];
     let v1: Vec<i16>   = vec![1, 2, 3, 4, 5];

@@ -1,7 +1,7 @@
 use std::mem::{size_of, size_of_val};
 use colored::Colorize;
 
-fn main() -> () {
+pub fn run() -> () {
 
     let s: &str = "러스트";
     let rs: &&str = &s;

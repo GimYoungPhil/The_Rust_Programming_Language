@@ -1,6 +1,6 @@
 use std::mem::{size_of, size_of_val};
 
-fn main() -> () {
+pub fn run() -> () {
 
     let a0: [i8; 5]    = [1, 2, 3, 4, 5];
     let a1: [i16; 5]   = [1, 2, 3, 4, 5];

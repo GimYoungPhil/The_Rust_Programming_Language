@@ -1,6 +1,6 @@
 use std::mem::{size_of, size_of_val};
 
-fn main() -> () {
+pub fn run() -> () {
 
     let s: String = String::from("Rust");
     let rs: &String = &s;

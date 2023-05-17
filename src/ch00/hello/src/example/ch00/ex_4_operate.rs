@@ -1,6 +1,6 @@
 use std::mem::size_of;
 
-fn main() -> () {
+pub fn run() -> () {
 
     let mut x0: i8 = 1;
     let x1: i8 = 2;

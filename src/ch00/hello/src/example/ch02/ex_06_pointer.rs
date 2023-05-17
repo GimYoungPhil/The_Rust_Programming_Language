@@ -1,6 +1,6 @@
 // use std::mem;
 
-fn main() -> () {
+pub fn run() -> () {
 
     let v: Vec<i32> = vec![1, 2, 3];
     print_vec(&v);

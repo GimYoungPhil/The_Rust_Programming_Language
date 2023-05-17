@@ -1,6 +1,6 @@
 use std::mem::{size_of, size_of_val};
 
-fn main() -> () {
+pub fn run() -> () {
 
     let s: String = String::from("Rust");
     println!("{: <8}| {: >6} | {: >6} | {:#p}", "String", size_of::<String>(), size_of_val(&s), &s);
