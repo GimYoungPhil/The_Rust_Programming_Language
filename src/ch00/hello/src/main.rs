@@ -20,7 +20,8 @@ fn main() {
     // ch09::ex_4::run();
     // ch09::ex_5::run();
     // ch09::ex_6::run();
-    ch09::ex_7::run();
+    // ch09::ex_7::run();
+    ch09::ex_8::run();
 }
 
 
