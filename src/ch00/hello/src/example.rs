@@ -19,3 +19,22 @@ pub mod ch02 {
     pub mod ex_05_function;
     pub mod ex_06_pointer;
 }
+
+pub mod ch08 {
+    pub mod ex_0;
+    pub mod ex_1;
+    pub mod ex_2;
+    pub mod ex_3;
+    pub mod ex_4;
+}
+
+pub mod ch09 {
+    pub mod ex_0;
+    // pub mod ex_1;
+    pub mod ex_2;
+    pub mod ex_3;
+    pub mod ex_4;
+    pub mod ex_5;
+    pub mod ex_6;
+    pub mod ex_7;
+}
